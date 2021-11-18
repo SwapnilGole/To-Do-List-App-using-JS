@@ -38,7 +38,6 @@ todoBtn.addEventListener("click",()=>{
     //   Add todo to Local Storage
         saveLocalTodos(todoInput.value)
 
-      // console.log("plus btn clicked");
       // todoList.innerHTML += `
       // <div class="todo-item">
       // <li>${todoInput.value}</li>
@@ -57,10 +56,10 @@ todoBtn.addEventListener("click",()=>{
     }
 })
 
-// delete the todo list
+// Add and delete the todo list
 todoList.addEventListener("click",(e)=>{
-    console.log(e.target)
     const item = e.target;
+    // delete the item
     if(item.classList[0] === "delete-btn"){
         // item.remove();
         let todoItem = item.parentElement;
@@ -72,11 +71,18 @@ todoList.addEventListener("click",(e)=>{
             todoItem.remove();
         })
     }
+    // Add the item
     if(item.classList[0] === "checked-btn"){
         let todoItem = item.parentElement;
         todoItem.classList.toggle("completed");
         item.firstChild.classList.toggle("checked");
         item.classList.toggle("checked");
+        const checkItems = {
+          
+        }
+        localStorage.setItem("checkedItem","hello");
+        localStorage.setItem("checkedItem",todoItem.classList.toggle("completed"));
+        localStorage.setItem("checkedItem",todoItem.classList.toggle("completed"));
         
     }
 })
@@ -84,7 +90,6 @@ todoList.addEventListener("click",(e)=>{
 // filter todo list
 // filterTodoList.addEventListener("click",(e)=>{
 //     const todos = todoList.childNodes;
-//     console.log(todos)
 //     todos.forEach(function(item){
 //         switch (e.target.value) {
 //           case "all":
@@ -110,7 +115,6 @@ filterTodoList.addEventListener("click",filterTodo)
 function filterTodo(e) {
 //   const todos = todoList.childNodes;
   const todos = document.querySelectorAll(".todo-item");
-  console.log(todos)
   todos.forEach(function (todo) {
     switch (e.target.value) {
       case "all":

@@ -94,7 +94,6 @@ form .uil,
     background-color: darkblue;
     border-radius: 0.5rem;
     transition: all 1s ease;
-    /* transform: rotateZ(20deg); */
 }
 .todo-item li{
     flex: 1;
@@ -102,7 +101,6 @@ form .uil,
     list-style-type: none;
     color:#fff;
     margin:0.25rem 0.5rem;
-    /* text-align: center; */
 }
 .todo-item button{
     border-radius:0.25rem;
@@ -112,7 +110,6 @@ form .uil,
     line-height: 30px;
     transition: all 1s ease;
     background-color: #fff;
-    /* font-size: 1.15rem; */
 }
 .uil-check,
 .uil-trash-alt{
@@ -125,24 +122,6 @@ form .uil,
 .todo-item .uil-check{
     color:#e78f09
 }
-/* .todo-item .delete-btn:hover{
-    background-color:#36f307;
-}
-.todo-item .checked-btn:hover{
-    background-color:#e78f09;
-}
-.todo-item button:hover .uil{
-    color:#fff;
-} */
-/* .todo-item button{
-    height:30px;
-    width:30px;
-    line-height:30px;
-    margin:0 0.25rem;
-    border:none;
-    border-radius:0.25rem;
-    color:#EB3349;
-} */
 .fall{
     transform: translateY(8rem) rotateZ(20deg);
     opacity: 0;
@@ -202,19 +181,6 @@ select{
     }
 }
 @media screen and (max-width:768px) {
-    /* header{
-    font-size:1.25rem;
-    }
-    form{
-    width:75%;
-    }
-    .todo-item{
-    margin:1rem auto;
-    width:90%;
-    } */
-    /* .form-container input{
-    padding: 0.5rem 1rem;
-    } */
     .todo-item{
     width:90%;
     padding:0.25rem;
