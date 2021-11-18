@@ -22,19 +22,19 @@ header{
     align-items: center;
     justify-content: center;
 }
-.main{
+/* .main{
     display:flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     width:90%;
     margin:0 auto;
-}
+} */
 .form-container{
     display:flex;
     align-items: center;
     justify-content: center;
-    width:60%;
+    width:80%;
 }
 form{
     display: flex;
@@ -187,9 +187,9 @@ select{
     }
 }
 @media screen and (max-width:768px) {
-    .form-container{
+    /* .form-container{
     width:80%;
-    }
+    } */
     .todo-item{
     width:90%;
     padding:0.25rem;
@@ -210,11 +210,11 @@ select{
     form{
     width:85%;
     }
-    .form-container{
+    /* .form-container{
     width:90%;
     flex-direction: column;
     grid-gap:0.5rem;
-    }
+    } */
     form input{
     padding: 0.25rem 0.5rem;
     font-size:0.8rem;
