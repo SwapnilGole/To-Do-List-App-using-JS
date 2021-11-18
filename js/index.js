@@ -87,30 +87,6 @@ todoList.addEventListener("click",(e)=>{
     }
 })
 
-// filter todo list
-// filterTodoList.addEventListener("click",(e)=>{
-//     const todos = todoList.childNodes;
-//     todos.forEach(function(item){
-//         switch (e.target.value) {
-//           case "all":
-//             item.style.display = "flex";
-//             break;
-//           case "completed":
-//             if (item.classList.contains("completed")) {
-//               item.style.display = "block";
-//             } else {
-//               item.style.display = "none";
-//             }
-//             break;
-//           case "uncompleted":
-//             if (!todos.classList.contains("completed")) {
-//               todos.style.display = "flex";
-//             } else {
-//               todos.style.display = "none";
-//             }
-//         }
-//     })
-// })
 filterTodoList.addEventListener("click",filterTodo)
 function filterTodo(e) {
 //   const todos = todoList.childNodes;
