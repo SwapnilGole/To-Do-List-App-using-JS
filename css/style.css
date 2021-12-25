@@ -34,11 +34,13 @@ header{
     display:flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
     width:80%;
+    margin:0 auto;
 }
 form{
     display: flex;
-    width:90%;
+    width:60%;
     margin:0 auto;
 }
 form input{
